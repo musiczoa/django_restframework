@@ -1,0 +1,24 @@
+logrotate state -- version 2
+"/home/svm/.cache/upstart/indicator-power.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/unity7.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/hud.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/indicator-sound.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/update-notifier-release.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/im-config.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/update-notifier-crash-_var_crash__usr_bin_vim.basic.1000.crash.log" 2015-6-19-10:22:27
+"/home/svm/.cache/upstart/indicator-bluetooth.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/dbus.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/indicator-printers.log" 2015-6-9-10:53:12
+"/home/svm/.cache/upstart/unity-panel-service.log" 2015-7-2-12:0:7
+"/home/svm/.cache/upstart/gnome-keyring-gpg.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/indicator-session.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/unicast-local-avahi.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/ssh-agent.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/update-notifier-crash-_var_crash__bin_plymouth-upstart-bridge.0.crash.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/update-notifier-cds.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/update-notifier-crash-_var_crash__usr_bin_compiz.1000.crash.log" 2015-6-19-10:22:27
+"/home/svm/.cache/upstart/gnome-keyring-ssh.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/unity-settings-daemon.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/gnome-session-Unity.log" 2015-7-2-12:0:7
+"/home/svm/.cache/upstart/window-stack-bridge.log" 2015-7-2-11:29:21
+"/home/svm/.cache/upstart/upstart-event-bridge.log" 2015-6-9-10:53:12

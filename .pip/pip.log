@@ -1,0 +1,39 @@
+------------------------------------------------------------
+/usr/bin/pip run on Thu Jul  2 14:04:56 2015
+Downloading/unpacking PIL
+  Getting page https://pypi.python.org/simple/PIL/
+  URLs to search for versions for PIL:
+  * https://pypi.python.org/simple/PIL/
+  Analyzing links from page https://pypi.python.org/simple/pil/
+    Skipping link http://effbot.org/downloads/#Imaging (from https://pypi.python.org/simple/pil/); not a file
+    Skipping link http://effbot.org/zone/pil-changes-115.htm (from https://pypi.python.org/simple/pil/); unknown archive format: .htm
+    Skipping link http://www.pythonware.com/downloads/Imaging-1.1.3.tar.gz (from https://pypi.python.org/simple/pil/); wrong project name (not pil)
+    Skipping link http://www.pythonware.com/products/pil (from https://pypi.python.org/simple/pil/); not a file
+    Skipping link http://www.pythonware.com/products/pil/ (from https://pypi.python.org/simple/pil/); not a file
+  Not searching http://effbot.org/downloads/#Imaging (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://effbot.org/zone/pil-changes-115.htm (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://effbot.org/zone/pil-changes-115.htm (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://effbot.org/zone/pil-changes-115.htm (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/downloads/Imaging-1.1.3.tar.gz (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil/ (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Not searching http://www.pythonware.com/products/pil/ (from https://pypi.python.org/simple/pil/) for files because external urls are disallowed.
+  Could not find any downloads that satisfy the requirement PIL
+  Some externally hosted files were ignored (use --allow-external PIL to allow).
+Cleaning up...
+  Removing temporary dir /tmp/pip_build_root...
+No distributions at all found for PIL
+Exception information:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1178, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/usr/lib/python2.7/dist-packages/pip/index.py", line 277, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for PIL

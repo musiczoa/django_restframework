@@ -1,0 +1,5 @@
+services.addons.mozilla.org:HSTS	3	16618	1467353870059,1,0
+www.facebook.com:HSTS	0	16612	1450863609183,1,0
+blocklist.addons.mozilla.org:HSTS	2	16618	1467353990223,1,0
+www.sourcetreeapp.com:HSTS	0	16612	1466847851367,1,0
+analytics.twitter.com:HSTS	0	16612	2066450128745,1,0

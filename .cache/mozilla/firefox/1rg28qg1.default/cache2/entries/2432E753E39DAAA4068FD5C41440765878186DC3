@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset='utf-8'>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGDF9E","queueTime":3,"applicationTime":660,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+  <title>Git - Book</title>
+
+  <link href='/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+  <link rel="alternate" href="/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css" />
+  <script src="/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js"></script>
+<script src="/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="https://use.typekit.com/jsq2fql.js" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation">
+
+  <div class="inner">
+    <header>
+  <a href="/"><img src="/images/logo@2x.png" width="110" height="46" alt="Git" /></a>
+  <span id="tagline">
+    <em>--</em>local-branching-on-the-cheap
+  </span>
+
+  <form id="search" action="/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text" />
+  </form>
+  <div id="search-results"></div>
+</header>
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="/docs">Reference</a>
+          </li>
+          <li>
+            <a href="/book">Book</a>
+          </li>
+          <li>
+            <a href="/videos">Videos</a>
+          </li>
+          <li>
+            <a href="/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/blog">Blog</a>
+      </li>
+      <li>
+        <a href="/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        <p>Download this book in <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.pdf">PDF</a>,
+   <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.mobi" type="application/x-mobipocket-ebook">mobi</a>,
+or <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.epub" type="application/epub+zip">ePub</a> form for free.</p>
+
+  <p>
+This book is translated into
+  <a href="/book/de">Deutsch</a>,
+  <a href="/book/zh">简体中文</a>,
+  <a href="/book/zh-tw">正體中文</a>,
+  <a href="/book/fr">Français</a>,
+  <a href="/book/ja">日本語</a>,
+  <a href="/book/nl">Nederlands</a>,
+  <a href="/book/ru">Русский</a>,
+  <a href="/book/ko">한국어</a>,
+  <a href="/book/pt-br">Português (Brasil)</a> and
+  <a href="/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="/book/ar">Arabic</a>,
+  <a href="/book/es">Español</a>,
+  <a href="/book/id">Indonesian</a>,
+  <a href="/book/it">Italiano</a>,
+  <a href="/book/fi">Suomi</a>,
+  <a href="/book/mk">Македонски</a>,
+  <a href="/book/pl">Polski</a> and
+  <a href="/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="/book/az">Azərbaycan dili</a>,
+  <a href="/book/be">Беларуская</a>,
+  <a href="/book/ca">Català</a>,
+  <a href="/book/eo">Esperanto</a>,
+  <a href="/book/es-ni">Español (Nicaragua)</a>,
+  <a href="/book/fa" dir="rtl">فارسی</a>,
+  <a href="/book/hi">हिन्दी</a>,
+  <a href="/book/hu">Magyar</a>,
+  <a href="/book/no-nb">Norwegian Bokmål</a>,
+  <a href="/book/ro">Română</a>,
+  <a href="/book/sr">Српски</a>,
+  <a href="/book/th">ภาษาไทย</a>,
+  <a href="/book/vi">Tiếng Việt</a>,
+  <a href="/book/uk">Українська</a> and
+  <a href="/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar"/>
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a></br>
+Patches, suggestions and comments are welcome.
+</p>
+
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id='main'>
+  <h1>Book</h1>
+    <div style="float:right;margin: -20px 40px 0 40px;">
+      <img  src="/images/progit2.png" width="118" height="157"/>
+      <div style="light">2nd Edition (2014)</div>
+      <div class="switch"><a href="/book/en/v1">Switch to 1st Edition</a></div>
+      <div class="ebook-download">
+        <h2>Download Ebook</h2>
+        <div class="ebooks">
+            <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.pdf"><img width="50px" src="/images/pdf.png"/></a>
+            <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.epub"><img width="50px" src="/images/epub.png"/></a>
+        </div>
+        <div class="ebooks">
+            <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.mobi"><img width="50px" src="/images/mobi.png"/></a>
+            <a href="https://progit2.s3.amazonaws.com/en/2015-06-28-a1792/progit-en.562.zip"><img width="50px" src="/images/html.png"/></a>
+        </div>
+      </div>
+    </div>
+  <p>
+  The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here. All content is licensed under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution Non Commercial Share Alike 3.0 license</a>. Print versions of the book are available on <a href="http://www.amazon.com/Pro-Git-Scott-Chacon/dp/1484200772?ie=UTF8&camp=1789&creative=9325&creativeASIN=1430218339&linkCode=as2&tag=git-sfconservancy-20">Amazon.com</a>.</>
+  </p>
+  <ol class='book-toc'>
+    <li class='chapter'>
+    <h2>1. <a href="/book/en/v2/Getting-Started-About-Version-Control">Getting Started</a></h2>
+      <ol>
+            <li>
+              1.1
+              <a href="/book/en/v2/Getting-Started-About-Version-Control">About Version Control</a>
+            </li>
+            <li>
+              1.2
+              <a href="/book/en/v2/Getting-Started-A-Short-History-of-Git">A Short History of Git</a>
+            </li>
+            <li>
+              1.3
+              <a href="/book/en/v2/Getting-Started-Git-Basics">Git Basics</a>
+            </li>
+            <li>
+              1.4
+              <a href="/book/en/v2/Getting-Started-The-Command-Line">The Command Line</a>
+            </li>
+            <li>
+              1.5
+              <a href="/book/en/v2/Getting-Started-Installing-Git">Installing Git</a>
+            </li>
+            <li>
+              1.6
+              <a href="/book/en/v2/Getting-Started-First-Time-Git-Setup">First-Time Git Setup</a>
+            </li>
+            <li>
+              1.7
+              <a href="/book/en/v2/Getting-Started-Getting-Help">Getting Help</a>
+            </li>
+            <li>
+              1.8
+              <a href="/book/en/v2/Getting-Started-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>2. <a href="/book/en/v2/Git-Basics-Getting-a-Git-Repository">Git Basics</a></h2>
+      <ol>
+            <li>
+              2.1
+              <a href="/book/en/v2/Git-Basics-Getting-a-Git-Repository">Getting a Git Repository</a>
+            </li>
+            <li>
+              2.2
+              <a href="/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">Recording Changes to the Repository</a>
+            </li>
+            <li>
+              2.3
+              <a href="/book/en/v2/Git-Basics-Viewing-the-Commit-History">Viewing the Commit History</a>
+            </li>
+            <li>
+              2.4
+              <a href="/book/en/v2/Git-Basics-Undoing-Things">Undoing Things</a>
+            </li>
+            <li>
+              2.5
+              <a href="/book/en/v2/Git-Basics-Working-with-Remotes">Working with Remotes</a>
+            </li>
+            <li>
+              2.6
+              <a href="/book/en/v2/Git-Basics-Tagging">Tagging</a>
+            </li>
+            <li>
+              2.7
+              <a href="/book/en/v2/Git-Basics-Git-Aliases">Git Aliases</a>
+            </li>
+            <li>
+              2.8
+              <a href="/book/en/v2/Git-Basics-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>3. <a href="/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Git Branching</a></h2>
+      <ol>
+            <li>
+              3.1
+              <a href="/book/en/v2/Git-Branching-Branches-in-a-Nutshell">Branches in a Nutshell</a>
+            </li>
+            <li>
+              3.2
+              <a href="/book/en/v2/Git-Branching-Basic-Branching-and-Merging">Basic Branching and Merging</a>
+            </li>
+            <li>
+              3.3
+              <a href="/book/en/v2/Git-Branching-Branch-Management">Branch Management</a>
+            </li>
+            <li>
+              3.4
+              <a href="/book/en/v2/Git-Branching-Branching-Workflows">Branching Workflows</a>
+            </li>
+            <li>
+              3.5
+              <a href="/book/en/v2/Git-Branching-Remote-Branches">Remote Branches</a>
+            </li>
+            <li>
+              3.6
+              <a href="/book/en/v2/Git-Branching-Rebasing">Rebasing</a>
+            </li>
+            <li>
+              3.7
+              <a href="/book/en/v2/Git-Branching-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>4. <a href="/book/en/v2/Git-on-the-Server-The-Protocols">Git on the Server</a></h2>
+      <ol>
+            <li>
+              4.1
+              <a href="/book/en/v2/Git-on-the-Server-The-Protocols">The Protocols</a>
+            </li>
+            <li>
+              4.2
+              <a href="/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server">Getting Git on a Server</a>
+            </li>
+            <li>
+              4.3
+              <a href="/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key">Generating Your SSH Public Key</a>
+            </li>
+            <li>
+              4.4
+              <a href="/book/en/v2/Git-on-the-Server-Setting-Up-the-Server">Setting Up the Server</a>
+            </li>
+            <li>
+              4.5
+              <a href="/book/en/v2/Git-on-the-Server-Git-Daemon">Git Daemon</a>
+            </li>
+            <li>
+              4.6
+              <a href="/book/en/v2/Git-on-the-Server-Smart-HTTP">Smart HTTP</a>
+            </li>
+            <li>
+              4.7
+              <a href="/book/en/v2/Git-on-the-Server-GitWeb">GitWeb</a>
+            </li>
+            <li>
+              4.8
+              <a href="/book/en/v2/Git-on-the-Server-GitLab">GitLab</a>
+            </li>
+            <li>
+              4.9
+              <a href="/book/en/v2/Git-on-the-Server-Third-Party-Hosted-Options">Third Party Hosted Options</a>
+            </li>
+            <li>
+              4.10
+              <a href="/book/en/v2/Git-on-the-Server-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>5. <a href="/book/en/v2/Distributed-Git-Distributed-Workflows">Distributed Git</a></h2>
+      <ol>
+            <li>
+              5.1
+              <a href="/book/en/v2/Distributed-Git-Distributed-Workflows">Distributed Workflows</a>
+            </li>
+            <li>
+              5.2
+              <a href="/book/en/v2/Distributed-Git-Contributing-to-a-Project">Contributing to a Project</a>
+            </li>
+            <li>
+              5.3
+              <a href="/book/en/v2/Distributed-Git-Maintaining-a-Project">Maintaining a Project</a>
+            </li>
+            <li>
+              5.4
+              <a href="/book/en/v2/Distributed-Git-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>6. <a href="/book/en/v2/GitHub-Account-Setup-and-Configuration">GitHub</a></h2>
+      <ol>
+            <li>
+              6.1
+              <a href="/book/en/v2/GitHub-Account-Setup-and-Configuration">Account Setup and Configuration</a>
+            </li>
+            <li>
+              6.2
+              <a href="/book/en/v2/GitHub-Contributing-to-a-Project">Contributing to a Project</a>
+            </li>
+            <li>
+              6.3
+              <a href="/book/en/v2/GitHub-Maintaining-a-Project">Maintaining a Project</a>
+            </li>
+            <li>
+              6.4
+              <a href="/book/en/v2/GitHub-Managing-an-organization">Managing an organization</a>
+            </li>
+            <li>
+              6.5
+              <a href="/book/en/v2/GitHub-Scripting-GitHub">Scripting GitHub</a>
+            </li>
+            <li>
+              6.6
+              <a href="/book/en/v2/GitHub-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>7. <a href="/book/en/v2/Git-Tools-Revision-Selection">Git Tools</a></h2>
+      <ol>
+            <li>
+              7.1
+              <a href="/book/en/v2/Git-Tools-Revision-Selection">Revision Selection</a>
+            </li>
+            <li>
+              7.2
+              <a href="/book/en/v2/Git-Tools-Interactive-Staging">Interactive Staging</a>
+            </li>
+            <li>
+              7.3
+              <a href="/book/en/v2/Git-Tools-Stashing-and-Cleaning">Stashing and Cleaning</a>
+            </li>
+            <li>
+              7.4
+              <a href="/book/en/v2/Git-Tools-Signing-Your-Work">Signing Your Work</a>
+            </li>
+            <li>
+              7.5
+              <a href="/book/en/v2/Git-Tools-Searching">Searching</a>
+            </li>
+            <li>
+              7.6
+              <a href="/book/en/v2/Git-Tools-Rewriting-History">Rewriting History</a>
+            </li>
+            <li>
+              7.7
+              <a href="/book/en/v2/Git-Tools-Reset-Demystified">Reset Demystified</a>
+            </li>
+            <li>
+              7.8
+              <a href="/book/en/v2/Git-Tools-Advanced-Merging">Advanced Merging</a>
+            </li>
+            <li>
+              7.9
+              <a href="/book/en/v2/Git-Tools-Rerere">Rerere</a>
+            </li>
+            <li>
+              7.10
+              <a href="/book/en/v2/Git-Tools-Debugging-with-Git">Debugging with Git</a>
+            </li>
+            <li>
+              7.11
+              <a href="/book/en/v2/Git-Tools-Submodules">Submodules</a>
+            </li>
+            <li>
+              7.12
+              <a href="/book/en/v2/Git-Tools-Bundling">Bundling</a>
+            </li>
+            <li>
+              7.13
+              <a href="/book/en/v2/Git-Tools-Replace">Replace</a>
+            </li>
+            <li>
+              7.14
+              <a href="/book/en/v2/Git-Tools-Credential-Storage">Credential Storage</a>
+            </li>
+            <li>
+              7.15
+              <a href="/book/en/v2/Git-Tools-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>8. <a href="/book/en/v2/Customizing-Git-Git-Configuration">Customizing Git</a></h2>
+      <ol>
+            <li>
+              8.1
+              <a href="/book/en/v2/Customizing-Git-Git-Configuration">Git Configuration</a>
+            </li>
+            <li>
+              8.2
+              <a href="/book/en/v2/Customizing-Git-Git-Attributes">Git Attributes</a>
+            </li>
+            <li>
+              8.3
+              <a href="/book/en/v2/Customizing-Git-Git-Hooks">Git Hooks</a>
+            </li>
+            <li>
+              8.4
+              <a href="/book/en/v2/Customizing-Git-An-Example-Git-Enforced-Policy">An Example Git-Enforced Policy</a>
+            </li>
+            <li>
+              8.5
+              <a href="/book/en/v2/Customizing-Git-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>9. <a href="/book/en/v2/Git-and-Other-Systems-Git-as-a-Client">Git and Other Systems</a></h2>
+      <ol>
+            <li>
+              9.1
+              <a href="/book/en/v2/Git-and-Other-Systems-Git-as-a-Client">Git as a Client</a>
+            </li>
+            <li>
+              9.2
+              <a href="/book/en/v2/Git-and-Other-Systems-Migrating-to-Git">Migrating to Git</a>
+            </li>
+            <li>
+              9.3
+              <a href="/book/en/v2/Git-and-Other-Systems-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>10. <a href="/book/en/v2/Git-Internals-Plumbing-and-Porcelain">Git Internals</a></h2>
+      <ol>
+            <li>
+              10.1
+              <a href="/book/en/v2/Git-Internals-Plumbing-and-Porcelain">Plumbing and Porcelain</a>
+            </li>
+            <li>
+              10.2
+              <a href="/book/en/v2/Git-Internals-Git-Objects">Git Objects</a>
+            </li>
+            <li>
+              10.3
+              <a href="/book/en/v2/Git-Internals-Git-References">Git References</a>
+            </li>
+            <li>
+              10.4
+              <a href="/book/en/v2/Git-Internals-Packfiles">Packfiles</a>
+            </li>
+            <li>
+              10.5
+              <a href="/book/en/v2/Git-Internals-The-Refspec">The Refspec</a>
+            </li>
+            <li>
+              10.6
+              <a href="/book/en/v2/Git-Internals-Transfer-Protocols">Transfer Protocols</a>
+            </li>
+            <li>
+              10.7
+              <a href="/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery">Maintenance and Data Recovery</a>
+            </li>
+            <li>
+              10.8
+              <a href="/book/en/v2/Git-Internals-Environment-Variables">Environment Variables</a>
+            </li>
+            <li>
+              10.9
+              <a href="/book/en/v2/Git-Internals-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>A1. <a href="/book/en/v2/Git-in-Other-Environments-Graphical-Interfaces">Git in Other Environments</a></h2>
+      <ol>
+            <li>
+              A1.1
+              <a href="/book/en/v2/Git-in-Other-Environments-Graphical-Interfaces">Graphical Interfaces</a>
+            </li>
+            <li>
+              A1.2
+              <a href="/book/en/v2/Git-in-Other-Environments-Git-in-Visual-Studio">Git in Visual Studio</a>
+            </li>
+            <li>
+              A1.3
+              <a href="/book/en/v2/Git-in-Other-Environments-Git-in-Eclipse">Git in Eclipse</a>
+            </li>
+            <li>
+              A1.4
+              <a href="/book/en/v2/Git-in-Other-Environments-Git-in-Bash">Git in Bash</a>
+            </li>
+            <li>
+              A1.5
+              <a href="/book/en/v2/Git-in-Other-Environments-Git-in-Zsh">Git in Zsh</a>
+            </li>
+            <li>
+              A1.6
+              <a href="/book/en/v2/Git-in-Other-Environments-Git-in-Powershell">Git in Powershell</a>
+            </li>
+            <li>
+              A1.7
+              <a href="/book/en/v2/Git-in-Other-Environments-Summary">Summary</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>A2. <a href="/book/en/v2/Embedding-Git-in-your-Applications-Command-line-Git">Embedding Git in your Applications</a></h2>
+      <ol>
+            <li>
+              A2.1
+              <a href="/book/en/v2/Embedding-Git-in-your-Applications-Command-line-Git">Command-line Git</a>
+            </li>
+            <li>
+              A2.2
+              <a href="/book/en/v2/Embedding-Git-in-your-Applications-Libgit2">Libgit2</a>
+            </li>
+            <li>
+              A2.3
+              <a href="/book/en/v2/Embedding-Git-in-your-Applications-JGit">JGit</a>
+            </li>
+      </ol>
+    </li>
+    <li class='chapter'>
+    <h2>A3. <a href="/book/en/v2/Git-Commands-Setup-and-Config">Git Commands</a></h2>
+      <ol>
+            <li>
+              A3.1
+              <a href="/book/en/v2/Git-Commands-Setup-and-Config">Setup and Config</a>
+            </li>
+            <li>
+              A3.2
+              <a href="/book/en/v2/Git-Commands-Getting-and-Creating-Projects">Getting and Creating Projects</a>
+            </li>
+            <li>
+              A3.3
+              <a href="/book/en/v2/Git-Commands-Basic-Snapshotting">Basic Snapshotting</a>
+            </li>
+            <li>
+              A3.4
+              <a href="/book/en/v2/Git-Commands-Branching-and-Merging">Branching and Merging</a>
+            </li>
+            <li>
+              A3.5
+              <a href="/book/en/v2/Git-Commands-Sharing-and-Updating-Projects">Sharing and Updating Projects</a>
+            </li>
+            <li>
+              A3.6
+              <a href="/book/en/v2/Git-Commands-Inspection-and-Comparison">Inspection and Comparison</a>
+            </li>
+            <li>
+              A3.7
+              <a href="/book/en/v2/Git-Commands-Debugging">Debugging</a>
+            </li>
+            <li>
+              A3.8
+              <a href="/book/en/v2/Git-Commands-Patching">Patching</a>
+            </li>
+            <li>
+              A3.9
+              <a href="/book/en/v2/Git-Commands-Email">Email</a>
+            </li>
+            <li>
+              A3.10
+              <a href="/book/en/v2/Git-Commands-External-Systems">External Systems</a>
+            </li>
+            <li>
+              A3.11
+              <a href="/book/en/v2/Git-Commands-Administration">Administration</a>
+            </li>
+            <li>
+              A3.12
+              <a href="/book/en/v2/Git-Commands-Plumbing-Commands">Plumbing Commands</a>
+            </li>
+      </ol>
+    </li>
+  </ol>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js"></script>
+<script src="/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js"></script>
+<script src="/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js"></script>
+<script src="/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js"></script>
+<script src="/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js"></script>
+
+    </div>
+
+</body>
+</html>
+E�+Y�      U��U� ;L�C       :http://git-scm.com/book/en/v2 necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Wed, 01 Jul 2015 09:25:12 GMT
+status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+x-content-type-options: nosniff
+Content-Type: text/html; charset=utf-8
+Content-Length: 26322
+Etag: W/"bffd928ad92f66d41e316394497956f9"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 53584b43-4296-443b-9f75-59ec7ce5a278
+X-Runtime: 0.660794
+Via: 1.1 vegur
+ charset UTF-8 uncompressed-len 0 predictor::resource-count 24 predictor::http://git-scm.com/assets/git-scm-51dae02d97f150a7e22b24f0c7497beb.css 1,1,1435311863,0 predictor::http://git-scm.com/assets/modernizr-00467669c322384bf7496c4c8a3a9923.js 1,1,1435311863,0 predictor::http://git-scm.com/assets/modernizr-tests-ccd0969e74790fbc9b3b7aaf586aeb1a.js 1,1,1435311863,0 predictor::https://use.typekit.com/jsq2fql.js 1,1,1435311863,0 predictor::http://git-scm.com/images/logo@2x.png 1,1,1435311863,0 predictor::http://git-scm.com/images/progit2.png 1,1,1435311863,0 predictor::http://git-scm.com/images/pdf.png 1,1,1435311863,0 predictor::http://git-scm.com/images/epub.png 1,1,1435311863,0 predictor::http://git-scm.com/images/mobi.png 1,1,1435311863,0 predictor::http://git-scm.com/images/html.png 1,1,1435311863,0 predictor::http://git-scm.com/assets/jquery-1.7.1.min-be9a6d736d84f3afff832c45505a93ae.js 1,1,1435311863,0 predictor::http://git-scm.com/assets/jquery-ui-1.8.18.custom.min-b4925c900f94bfd386687eee6c7e641b.js 1,1,1435311863,0 predictor::http://git-scm.com/assets/jquery.defaultvalue-9dacb30fffc5f8c850fb08b580f804f5.js 1,1,1435311863,0 predictor::http://git-scm.com/assets/session.min-aa06ccb9184d9842c39f131ce822e02c.js 1,1,1435311863,0 predictor::http://git-scm.com/assets/site-0f10deab99d4bed911f2f2bb6cf24b5a.js 1,1,1435311863,0 predictor::http://git-scm.com/images/bg/body.jpg 1,1,1435311863,0 predictor::http://git-scm.com/images/icons/search.png 1,1,1435311863,0 predictor::http://git-scm.com/images/sidebar-divider.png 1,1,1435311863,0 predictor::http://git-scm.com/images/icons/code.png 1,1,1435311863,0 predictor::https://www.google.com/jsapi?callback=gloader_ready 1,1,1435311863,0 predictor::http://secure.gaug.es/track.js 1,1,1435311863,0 predictor::http://secure.gaug.es/track.gif?h[site_id]=4f919d1df5a1f504b3000026&h[resource]=http%3A%2F%2Fgit-scm.com%2Fbook%2Fen%2Fv2&h[referrer]=&h[title]=Git%20-%20Book&h[user_agent]=Mozilla%2F5.0%20(X11%3B%20Ubuntu%3B%20Linux%20i686%3B%20rv%3A38.0)%20Gecko%2F20100101%20Firefox%2F38.0&h[unique]=1&h[unique_hour]=1&h[unique_day]=1&h[unique_month]=1&h[unique_year]=1&h[screenx]=1133&h[browserx]=1015&h[browsery]=933&timestamp=1435311868386 1,1,1435311863,0 predictor::http://js-agent.newrelic.com/nr-632.min.js 1,1,1435311863,0 predictor::http://bam.nr-data.net/1/20c4a8c482?a=454369&pl=1435311862458&v=632.2b17625&to=dl5cQkcLXF9XRBoHW1paQRlGDF9E&qt=3&ap=660&be=2688&fe=6866&dc=2123&f=%5B%5D&perf=%7B%22timing%22:%7B%22of%22:1435311862458,%22n%22:0,%22dl%22:2445,%22di%22:4635,%22ds%22:4806,%22de%22:4867,%22dc%22:9553,%22l%22:9553,%22le%22:9566,%22r%22:11,%22re%22:1119,%22f%22:1121,%22dn%22:1121,%22dne%22:1128,%22c%22:1128,%22ce%22:1128,%22rq%22:1458,%22rp%22:2426,%22rpe%22:2741%7D,%22navigation%22:%7B%22rc%22:2%7D%7D&jsonp=NREUM.setToken 1,1,1435311863,0   f�
